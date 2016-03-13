@@ -7,5 +7,8 @@ public class AccountInfoActivity extends BaseFragmentActivity {
 	@Override
 	public void newFragmentObj() {
 		fragment = new AccountInfoFragment();
+
+
+
 	}
 }
