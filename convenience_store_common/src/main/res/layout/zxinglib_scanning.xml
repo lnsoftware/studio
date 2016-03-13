@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 扫描界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/zxinglib_bg_orange"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zxinglib_dp_3"
+            android:background="@drawable/zxinglib_back_corner_selector"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/title_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zxing_scanning"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/zxinglib_activity_title_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <SurfaceView
+            android:id="@+id/scanning_sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.imxiaomai.convenience.store.scan.zxing.view.ViewfinderView
+            android:id="@+id/scanning_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

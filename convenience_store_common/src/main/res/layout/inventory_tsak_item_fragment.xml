@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品编号：" />
+
+                <TextView
+                    android:id="@+id/tv_inventory_sku"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品名称：" />
+
+                <TextView
+                    android:id="@+id/prd_name_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+			<LinearLayout style="@style/linearLayout_lab_style" >
+
+				<TextView
+					style="@style/textView_wrap_style"
+					android:text="商品规格：" />
+
+				<TextView
+					android:id="@+id/tv_prd_specification"
+					style="@style/textView_match_style" />
+			</LinearLayout>
+
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品条码：" />
+
+                <EditText
+                    android:id="@+id/prd_no_et"
+                    style="@style/editView_style"
+                    android:hint="扫描商品条码" />
+
+                <Button
+                    android:id="@+id/prd_no_input_bt"
+                    style="@style/handInputBt_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="数        量：" />
+
+                <EditText
+                    android:id="@+id/prd_num_et"
+                    style="@style/editView_style"
+                    android:enabled="true"
+                    android:maxLength="9"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:hint="输入商品数量" />
+                
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <Button
+                    android:id="@+id/submit_bt"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="确定" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

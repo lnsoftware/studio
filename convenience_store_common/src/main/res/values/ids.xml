@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="awbInput">false</item>
+    <item type="id" name="controls">false</item>
+    <item type="id" name="match">false</item>
+    <item type="id" name="awbcode">false</item>
+    <item type="id" name="list">false</item>
+    <item type="id" name="progress_layout4">false</item>
+    <item type="id" name="slider_layout">false</item>
+    <item type="id" name="getup_arrow">false</item>
+    <item type="id" name="slider_icon">false</item>
+    <item type="id" name="dialog">false</item>
+    <item type="id" name="dialogname">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="awbcode1">false</item>
+    <item type="id" name="cancel">false</item>
+    <item type="id" name="confirm">false</item>
+    <item type="id" name="keyboard_view">false</item>
+    <item type="id" name="download">false</item>
+    <item type="id" name="comescanning">false</item>
+    <item type="id" name="pkgcomescanning">false</item>
+    <item type="id" name="outscanning">false</item>
+    <item type="id" name="title_type">false</item>
+    <item type="id" name="desc1">false</item>
+    <item type="id" name="desc2">false</item>
+    <item type="id" name="desc3">false</item>
+    <item type="id" name="list1">false</item>
+    <item type="id" name="list2">false</item>
+    <item type="id" name="list3">false</item>
+    <item type="id" name="progress_match">false</item>
+    <item type="id" name="progress_order">false</item>
+    <item type="id" name="container">false</item>
+    <item type="id" name="rlCommenTitle">false</item>
+    <item type="id" name="left">false</item>
+    <item type="id" name="right">false</item>
+    <item type="id" name="content">false</item>
+    <item type="id" name="relative">false</item>
+    <item type="id" name="status">false</item>
+    <item type="id" name="tv_msg">false</item>
+    <item type="id" name="img_load">false</item>
+    <item type="id" name="img_ling">false</item>
+    <item type="id" name="img_cancel">false</item>
+    <item type="id" name="boxscan">false</item>
+    <item type="id" name="keyboard" />
+    
+    <!-- Messages IDs -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+
+</resources>

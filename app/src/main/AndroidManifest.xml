@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imxiaomai.convenience.store"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk  
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <!-- 访问Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- - 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- ZXing -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="com.imxiaomai.convenience.store.scan.StoreApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/WmsTheme" >
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.MainActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.PurchaseActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.PurchaseDetailActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.StockQueryActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.OutBoundActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.SettingActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.AccountInfoActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 盘点作业 -->
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.InventoryTaskActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 盘点作业item -->
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.InventoryTaskItemActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+		<!-- 返架上架 -->
+		<activity
+			android:name="com.imxiaomai.convenience.store.scan.activity.RevokeActivity"
+			android:launchMode="standard"
+			android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+		<!-- 返架上架商品 -->
+		<activity
+			android:name="com.imxiaomai.convenience.store.scan.activity.RevokeDetailActivity"
+			android:launchMode="standard"
+			android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 上架商品详情 -->
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.activity.ProductOnShelfDetailActivity"
+            android:launchMode="standard" />
+        <!-- 条形码扫描 -->
+        <activity
+            android:name="com.imxiaomai.convenience.store.scan.zxing.ZxScanningActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        
+		<!-- service -->
+        <service android:name="com.imxiaomai.convenience.store.scan.service.LoadDataService" >
+            <intent-filter>
+                <action android:name="com.imxiaomai.cb.mobile.scan.service.LoadDataService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.imxiaomai.convenience.store.scan.service.DownloadService" >
+            <intent-filter>
+                <action android:name="com.imxiaomai.cb.mobile.scan.service.DownloadService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

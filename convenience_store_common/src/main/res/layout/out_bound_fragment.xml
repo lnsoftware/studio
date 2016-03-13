@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_xiaomai"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="订  单  号：" />
+
+                <EditText
+                    android:id="@+id/order_no_et"
+                    style="@style/editView_style"
+                    android:hint="扫描订单号" />
+
+                <Button
+                    android:id="@+id/input_bt"
+                    style="@style/handInputBt_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品数量：" />
+
+                <TextView
+                    android:id="@+id/order_num_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="SKU数量：" />
+
+                <TextView
+                    android:id="@+id/sku_num_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="配送方式：" />
+
+                <TextView
+                    android:id="@+id/dispatching_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="麦客姓名：" />
+
+                <TextView
+                    android:id="@+id/maike_name_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="麦客电话：" />
+
+                <TextView
+                    android:id="@+id/maike_phone_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="客户姓名：" />
+
+                <TextView
+                    android:id="@+id/cust_name_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <Button
+                    android:id="@+id/btn_out_bound"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="@string/out_bound_btn" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/xiaomai" >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/navigation_button_back"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/head_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/action_iv"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/btn_setting" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品条码：" />
+
+                <EditText
+                    android:id="@+id/prd_no_et"
+                    style="@style/editView_style"
+                    android:hint="扫描商品条形码或sku" />
+
+                <Button
+                    android:id="@+id/prdno_input_bt"
+                    style="@style/handInputBt_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="商品名称：" />
+
+                <TextView
+                    android:id="@+id/prd_name_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_lab_style"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="生产日期：" />
+
+                <EditText
+                    android:id="@+id/prd_date_et"
+                    style="@style/editView_style"
+                    android:hint="生产日期" />
+
+                <Button
+                    android:id="@+id/prd_date_bt"
+                    style="@style/handInputBt_style"
+                    android:text="@string/selete_date" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_lab_style"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="保质期：" />
+
+                <TextView
+                    android:id="@+id/prd_period_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_lab_style"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="有效期至：" />
+
+                <EditText
+                    android:id="@+id/prd_expiration_et"
+                    style="@style/editView_style"
+                    android:hint="到期日" />
+
+                <Button
+                    android:id="@+id/prd_expiration_bt"
+                    style="@style/handInputBt_style"
+                    android:text="@string/selete_date" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="应上数量：" />
+
+                <TextView
+                    android:id="@+id/onshelfed_num_tv"
+                    style="@style/textView_match_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout_lab_style" >
+
+                <TextView
+                    style="@style/textView_wrap_style"
+                    android:text="实际数量：" />
+
+                <EditText
+                    android:id="@+id/pro_num_et"
+                    style="@style/editView_style"
+                    android:enabled="true"
+                    android:hint="上架数量"
+                    android:inputType="number"
+                    android:maxLength="9" />
+
+                <TextView
+                    android:id="@+id/prd_unit_tv"
+                    style="@style/textView_wrap_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:weightSum="4" >
+
+                <Button
+                    android:id="@+id/details_bt"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:text="查看待上架商品"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/submit_bt"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
