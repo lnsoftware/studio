@@ -8,7 +8,7 @@ public class AccountInfoActivity extends BaseFragmentActivity {
 	public void newFragmentObj() {
 		fragment = new AccountInfoFragment();
 
-
+		System.out.println("lxm");
 
 	}
 }
